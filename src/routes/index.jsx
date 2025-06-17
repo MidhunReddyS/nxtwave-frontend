@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Protected from "./protected";
 import Home from "../Pages/home";
 import Signin from "../Pages/signin";
@@ -9,6 +9,7 @@ import Public from "./public";
 
 const Index = () => {
   return (
+    <BrowserRouter basename="/nxtwave-frontend/">
       <Routes>
         <Route path="/">
           <Route element={<Protected />}>
@@ -23,6 +24,7 @@ const Index = () => {
           <Route path="*" element={<h1>Page not found</h1>} />
         </Route>
       </Routes>
+    </BrowserRouter>
   );
 };
 
