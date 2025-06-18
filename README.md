@@ -51,10 +51,10 @@ Before you begin, ensure you have the following installed:
 
 ### Running Locally
 
-1. **To start the development server**:
-        ```bash
-        npm run dev
-        ```
+**To start the development server**:
+    ```bash
+    npm run dev
+    ```
 
 ## Deployment
 
